@@ -24,7 +24,6 @@ const quotes = [
   { "quote": "Remember that sometimes not getting what you want is a wonderful stroke of luck.", "author": "Dalai Lama" },
   { "quote": "To think in terms of either pessimism or optimism oversimplifies the truth. The problem is to see reality as it is.", "author": "Thich Nhat Hanh" },
   { "quote": "Every experience, no matter how bad it seems, holds within it a blessing of some kind. The goal is to find it.", "author": "Buddha" },
-  // Continuing from the previous sets...
   { "quote": "No one can hurt me without my permission.", "author": "Mahatma Gandhi" },
   { "quote": "And when the broken-hearted people living in the world agree, there will be an answer, let it be.", "author": "The Beatles" },
   { "quote": "Remember the blue sky. It may at times be obscured by clouds, but it is always there.", "author": "Andy Puddicombe" },
@@ -125,7 +124,7 @@ function nextQuote() {
   currentQuote = (currentQuote + 1) % quotes.length;
   const quoteBox = document.getElementById('quote-box');
   quoteBox.classList.remove('visible');
-  setTimeout(displayQuote, 500); // Short delay before showing the next quote
+  setTimeout(displayQuote, 200); // Short delay before showing the next quote
 }
 
 function updateCountdown() {
