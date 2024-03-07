@@ -101,6 +101,10 @@ const quotes = [
     { "quote": "As you breathe in, cherish yourself. As you breathe out, cherish all beings.", "author": "Dalai Lama" },
 ];
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('next-quote').addEventListener('click', nextQuote);
+});
+
 
 let currentQuote = 0;
 let countdownTimer = 8;
