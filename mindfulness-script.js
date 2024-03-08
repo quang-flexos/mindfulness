@@ -121,10 +121,10 @@ function displayQuote() {
 }
 
 function nextQuote() {
-  currentQuote = (currentQuote + 1) % quotes.length;
+  currentQuote = Math.floor(Math.random() * quotes.length); // Select a random index from the quotes array
   const quoteBox = document.getElementById('quote-box');
   quoteBox.classList.remove('visible');
-  setTimeout(displayQuote, 200); // Short delay before showing the next quote
+  setTimeout(displayQuote, 500); // Short delay before showing the next quote
 }
 
 function updateCountdown() {
